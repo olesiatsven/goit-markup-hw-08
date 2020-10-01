@@ -3,6 +3,17 @@
 .section-clients {
 	padding-top: 94px;
 	padding-bottom: 94px;
+
+	& h2 {
+		margin-top: 0px;
+		margin-bottom: 50px;
+		font-family: "Roboto";
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1.16;
+		text-align: center;
+		color: $title-text-color;
+	}
 }
 
 // .clients-container {
@@ -11,17 +22,6 @@
 // 	width: 1200px;
 // 	padding-left: 15px;
 // 	padding-right: 15px;
-
-& h2 {
-	margin-top: 0px;
-	margin-bottom: 50px;
-	font-family: "Roboto";
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.16;
-	text-align: center;
-	color: $title-text-color;
-}
 
 .clients-list {
 	display: flex;

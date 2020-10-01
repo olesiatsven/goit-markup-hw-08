@@ -1,6 +1,7 @@
 .main-nav {
 	display: flex;
 	align-items: center;
+	position: relative;
 }
 .site-nav {
 	display: flex;
@@ -8,6 +9,10 @@
 
 	&:hover::after .link.line {
 		opacity: 1;
+	}
+
+	@include for-size(mobile-only) {
+		flex-direction: column;
 	}
 }
 
@@ -60,4 +65,61 @@
 	border-radius: 2px;
 	opacity: 0.7;
 	transition: opacity 250ms $animation;
+}
+
+// Menu
+
+.menu-container {
+	text-align: center;
+	font-size: 24px;
+	background-color: greenyellow;
+	padding: 20px;
+
+	@include for-size(mobile-only) {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+
+		&.is-open {
+			display: block;
+		}
+	}
+
+	@include for-size(tablet) {
+		display: flex;
+	}
+}
+
+.menu-button {
+	display: inline-flex;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+
+	@include for-size(tablet) {
+		display: none;
+	}
+}
+
+.menu-button .icon-close {
+	display: none;
+}
+
+.menu-button.is-open .icon-close {
+	display: block;
+}
+
+.menu-button.is-open .icon-menu {
+	display: none;
+}
+
+.navigation,
+.contacts {
+	display: flex;
+}
+
+.navigation {
 }

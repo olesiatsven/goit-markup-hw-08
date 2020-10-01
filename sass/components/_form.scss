@@ -1,7 +1,7 @@
 .form {
 	display: flex;
 	flex-direction: column;
-	width: 448px;
+	// width: 448px;
 	margin: auto;
 
 	&-title {
@@ -67,6 +67,10 @@
 	&:not(:placeholder-shown) {
 		border-color: $accent-color;
 	}
+}
+
+.input-title:hover {
+	fill: $accent-color;
 }
 
 .form-comment {
