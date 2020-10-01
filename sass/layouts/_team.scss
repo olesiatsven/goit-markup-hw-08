@@ -1,0 +1,41 @@
+.section-team {
+	background-color: $background-color-button;
+	color: $primery-text-color;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;
+	padding-top: 94px;
+	padding-bottom: 94px;
+	text-align: center;
+}
+
+.list-team .item {
+	width: calc((100% - 30px * 3) / 4);
+	margin-right: 30px;
+	background: $text-white-color;
+	border-radius: 0px 0px 4px 4px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.team-text {
+	padding-bottom: 20px;
+}
+
+.team-name {
+	color: $title-text-color;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	text-align: center;
+}

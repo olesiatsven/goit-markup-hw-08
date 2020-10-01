@@ -1,0 +1,72 @@
+/* button hero */
+.button {
+	color: $text-white-color;
+	background-color: $accent-color;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 30px;
+	min-width: 200px;
+	padding: 10px 32px;
+	border-radius: 4px;
+	text-decoration: none;
+	display: inline-block;
+	border: 1px solid transparent;
+}
+
+.form-btn {
+	display: inline-block;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 10px 56px;
+	border: none;
+	border-radius: 4px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+	color: $text-white-color;
+	background-color: $accent-color;
+}
+
+// Submit in footer
+
+.btn-subs {
+	display: inline-flex;
+	align-items: center;
+	padding-left: 28px;
+	padding-right: 28px;
+	margin-left: 12px;
+	height: 50px;
+	padding: 10px 29px;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	color: $text-white-color;
+	background-color: $accent-color;
+	border: none;
+	border-radius: 4px;
+	padding: 10px 32px;
+
+	font-size: 16px;
+	line-height: 1.9;
+	letter-spacing: 0.06em;
+	font-weight: 700;
+	background-repeat: no-repeat;
+
+	transition-duration: 250ms $animation;
+}
+
+.icon-send {
+	fill: $text-white-color;
+	transition-duration: 250ms $animation;
+}
+
+.sub-txt {
+	margin-right: 10px;
+}

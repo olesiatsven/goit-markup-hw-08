@@ -1,0 +1,46 @@
+/*Buttons portfolio */
+
+.button-list {
+	display: flex;
+	color: $title-text-color;
+	font-family: Roboto;
+	font-style: 400;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 26px;
+	padding-bottom: 34px;
+	letter-spacing: 0.03em;
+	/* margin-bottom: 34px; */
+	justify-content: center;
+	text-decoration: none;
+
+	& :focus,
+	& :hover {
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+		color: $text-white-color;
+		background-color: $accent-color;
+	}
+}
+
+.button-item {
+	padding: 6px 22px;
+	min-width: 73px;
+	margin-right: 8px;
+	border-radius: 4px;
+	justify-content: center;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+	text-align: center;
+	letter-spacing: 0.03em;
+	border: 1px solid transparent;
+	background-color: $background-color-button;
+	color: $title-text-color;
+	transition: color 250ms $animation, box-shadow 250ms $animation, background-color 250ms $animation;
+
+	& :last-child {
+		margin-right: 0;
+	}
+}
