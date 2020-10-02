@@ -2,18 +2,21 @@
 	display: flex;
 }
 
-.contacts .item + .item {
-	margin-left: 50px;
-}
+// .contacts .item + .item {
+// 	margin-left: 50px;
+// }
+
 .contacts .link {
 	color: $primery-text-color;
 	text-decoration: none;
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: 500;
-	font-size: 14px;
+	// font-size: 14px;
+
 	line-height: 16px;
 	display: flex;
+	justify-content: center;
 
 	&:hover,
 	&:focus {

@@ -2,41 +2,44 @@
 	display: flex;
 	align-items: center;
 	position: relative;
+	justify-content: space-between;
 }
 .site-nav {
 	display: flex;
-	margin-left: 93px;
 
 	&:hover::after .link.line {
 		opacity: 1;
 	}
 
+	@include for-size(tablet) {
+		.site-nav .item:not(:last-child) {
+			margin-right: 50px;
+		}
+		margin-left: 93px;
+	}
+
 	@include for-size(mobile-only) {
 		flex-direction: column;
 	}
-}
 
-.site-nav .item:not(:last-child) {
-	margin-right: 50px;
+	& .item:not(:last-child) {
+		margin-bottom: 40px;
+	}
 }
 
 .site-nav .link {
 	display: block;
-	padding-top: 32px;
-	padding-bottom: 32px;
+
 	color: $title-text-color;
 	text-decoration: none;
 	font-family: Roboto;
 	font-style: normal;
+	font-size: 36px;
 	font-weight: 500;
-	font-size: 14px;
 	line-height: 16px;
 	letter-spacing: 0.02em;
-
 	position: relative;
 	content: "";
-	padding-top: 32px;
-	padding-bottom: 32px;
 	color: $title-text-color;
 	font-weight: 500;
 	transition: color 250ms $animation;
@@ -52,7 +55,16 @@
 	&.line {
 		color: $accent-color;
 	}
+
+	@include for-size(tablet) {
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
 }
+
+// .site-nav .item + .item {
+// 	padding-bottom: 40px;
+// }
 
 .line::after {
 	position: absolute;
@@ -71,9 +83,10 @@
 
 .menu-container {
 	text-align: center;
-	font-size: 24px;
-	background-color: greenyellow;
-	padding: 20px;
+
+	background-color: $text-white-color;
+	padding-top: 60px;
+	padding-bottom: 60px;
 
 	@include for-size(mobile-only) {
 		display: none;
@@ -94,6 +107,7 @@
 
 .menu-button {
 	display: inline-flex;
+
 	margin: 0;
 	padding: 0;
 	border: none;
@@ -119,7 +133,30 @@
 .navigation,
 .contacts {
 	display: flex;
+	justify-content: center;
+	// margin-top: 60px;
 }
 
 .navigation {
+	display: flex;
+}
+
+.contacts .list {
+	margin: 0;
+	display: block;
+	font-size: 18px;
+}
+
+.contacts {
+	display: flex;
+	align-items: center;
+	margin-top: 60px;
+
+	& .item:not(:last-child) {
+		margin-bottom: 16px;
+	}
+}
+
+.item .link {
+	font-size: 18px;
 }

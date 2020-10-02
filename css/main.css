@@ -363,21 +363,19 @@ img {
   display: flex;
 }
 
-.contacts .item + .item {
-  margin-left: 50px;
-}
-
 .contacts .link {
   color: #757575;
   text-decoration: none;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contacts .link:hover, .contacts .link:focus {
@@ -1021,17 +1019,28 @@ a:hover svg {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .site-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 93px;
 }
 
 .site-nav:hover::after .link.line {
   opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .site-nav {
+    margin-left: 93px;
+  }
+  .site-nav .site-nav .item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1044,25 +1053,21 @@ a:hover svg {
 }
 
 .site-nav .item:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 40px;
 }
 
 .site-nav .link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: #212121;
   text-decoration: none;
   font-family: Roboto;
   font-style: normal;
+  font-size: 36px;
   font-weight: 500;
-  font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   position: relative;
   content: "";
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: #212121;
   font-weight: 500;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1077,6 +1082,13 @@ a:hover svg {
 
 .site-nav .link.line:hover, .site-nav .link.line:focus, .site-nav .link.line {
   color: #2196f3;
+}
+
+@media (min-width: 768px) {
+  .site-nav .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .line::after {
@@ -1095,9 +1107,9 @@ a:hover svg {
 
 .menu-container {
   text-align: center;
-  font-size: 24px;
-  background-color: greenyellow;
-  padding: 20px;
+  background-color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media (max-width: 767px) {
@@ -1154,6 +1166,39 @@ a:hover svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts .list {
+  margin: 0;
+  display: block;
+  font-size: 18px;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 60px;
+}
+
+.contacts .item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.item .link {
+  font-size: 18px;
 }
 
 /*Buttons portfolio */
