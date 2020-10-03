@@ -2,13 +2,17 @@
 	display: flex;
 	align-items: center;
 	position: relative;
-	justify-content: space-between;
+	// justify-content: space-between;
 }
 .site-nav {
 	display: flex;
 
 	&:hover::after .link.line {
 		opacity: 1;
+	}
+
+	@include for-size(desktop) {
+		margin-bottom: 0;
 	}
 
 	@include for-size(tablet) {
@@ -24,12 +28,17 @@
 
 	& .item:not(:last-child) {
 		margin-bottom: 40px;
+
+		@include for-size(desktop) {
+			margin-bottom: 0;
+			margin-right: 50px;
+			background-color: lawngreen;
+		}
 	}
 }
 
 .site-nav .link {
 	display: block;
-
 	color: $title-text-color;
 	text-decoration: none;
 	font-family: Roboto;
@@ -103,6 +112,13 @@
 	@include for-size(tablet) {
 		display: flex;
 	}
+
+	@include for-size(desktop) {
+		width: 100%;
+		justify-content: space-around;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
 }
 
 .menu-button {
@@ -134,17 +150,31 @@
 .contacts {
 	display: flex;
 	justify-content: center;
+
 	// margin-top: 60px;
+
+	@include for-size(desktop) {
+	}
 }
 
 .navigation {
 	display: flex;
 }
 
+.navigation.link:not(:last-child) {
+	@include for-size(desktop) {
+		margin-right: 50px;
+	}
+}
+
 .contacts .list {
 	margin: 0;
 	display: block;
 	font-size: 18px;
+
+	@include for-size(desktop) {
+		display: flex;
+	}
 }
 
 .contacts {
@@ -154,6 +184,20 @@
 
 	& .item:not(:last-child) {
 		margin-bottom: 16px;
+		@include for-size(desktop) {
+			margin-bottom: 0;
+		}
+	}
+
+	& .link:not(:last-child) {
+		@include for-size(desktop) {
+			margin-right: 30px;
+		}
+	}
+
+	@include for-size(desktop) {
+		margin-top: 0;
+		margin: auto;
 	}
 }
 
