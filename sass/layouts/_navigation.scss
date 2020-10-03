@@ -2,7 +2,10 @@
 	display: flex;
 	align-items: center;
 	position: relative;
-	// justify-content: space-between;
+
+	@include for-size(mobile) {
+		justify-content: space-between;
+	}
 }
 .site-nav {
 	display: flex;
@@ -32,7 +35,6 @@
 		@include for-size(desktop) {
 			margin-bottom: 0;
 			margin-right: 50px;
-			background-color: lawngreen;
 		}
 	}
 }
@@ -66,8 +68,8 @@
 	}
 
 	@include for-size(tablet) {
-		padding-top: 32px;
-		padding-bottom: 32px;
+		// padding-top: 32px;
+		// padding-bottom: 32px;
 	}
 }
 
@@ -111,6 +113,9 @@
 
 	@include for-size(tablet) {
 		display: flex;
+		padding-bottom: 0;
+		padding-top: 0;
+		justify-content: space-between;
 	}
 
 	@include for-size(desktop) {
@@ -149,7 +154,7 @@
 .navigation,
 .contacts {
 	display: flex;
-	justify-content: center;
+	// justify-content: center;
 
 	// margin-top: 60px;
 
@@ -186,18 +191,27 @@
 		margin-bottom: 16px;
 		@include for-size(desktop) {
 			margin-bottom: 0;
+			margin-right: 30px;
+		}
+		@include for-size(tablet) {
+			margin-top: 0;
+			margin-bottom: 0;
 		}
 	}
 
-	& .link:not(:last-child) {
-		@include for-size(desktop) {
-			margin-right: 30px;
-		}
+	@include for-size(tablet) {
+		margin-top: 0;
+		margin-bottom: 0;
 	}
 
 	@include for-size(desktop) {
 		margin-top: 0;
 		margin: auto;
+	}
+	& .link {
+		@include for-size(tablet) {
+			justify-content: normal;
+		}
 	}
 }
 
