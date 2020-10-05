@@ -45,7 +45,6 @@ img {
 	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: orchid;
 
 	@include for-size(mobile) {
 		position: fixed;
