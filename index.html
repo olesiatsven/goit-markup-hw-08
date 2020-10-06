@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" overflow-x: hidden;>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -124,19 +124,19 @@
 					<ul class="work-list">
 						<li class="item">
 							<div class="container-overlay">
-								<img src="./image/img.png" alt="web image 1" />
+								<img src="./image/desktop/work1@1x.jpg" alt="web image 1" />
 								<p class="work-text">декстопные приложения</p>
 							</div>
 						</li>
 						<li class="item">
 							<div class="container-overlay">
-								<img src="./image/img2.png" alt="web image 2" />
+								<img src="./image/desktop/work2@1x.jpg" alt="web image 2" />
 								<p class="work-text">мобильные приложения</p>
 							</div>
 						</li>
 						<li class="item">
 							<div class="container-overlay">
-								<img src="./image/img3.png" alt="web image 3" />
+								<img src="./image/desktop/work3@1x.jpg" alt="web image 3" />
 								<p class="work-text">дизайнерские решения</p>
 							</div>
 						</li>
@@ -151,7 +151,17 @@
 					<h2 class="title-main">Наша команда</h2>
 					<ul class="list-team">
 						<li class="item">
-							<img src="./image/1.jpg" alt="Игорь Демьяненко" width="300" />
+							<picture>
+								<source srcset="image/desktop/img1@1x.jpg 1x, image/desktop/img1@2x.jpg 2x" media="(min-width: 1200px)"
+									type="image/jpg" />
+								<source srcset="image/tablet/img1@1x.jpg 1x, image/tablet/img1@2x.jpg 2x" media="(min-width: 768px)"
+									type="image/jpg" />
+								<source srcset="image/mobile/img1@1x.jpg 1x, image/mobile/img1@2x.jpg 2x" media="(min-width: 480px)"
+									type="image/jpg" />
+								<img src="./image/mobile/img1@1x.jpg" alt="Игорь Демьяненко" width="300" />
+							
+							</picture>
+							
 							<div class="team-text">
 								<p class="team-name">Игорь Демьяненко</p>
 								<p class="team">Product Designer</p>
@@ -190,7 +200,14 @@
 						</li>
 
 						<li class="item">
-							<img src="./image/4.jpg" alt="Ольга Репина" width="300" />
+							<picture>
+								<source srcset="image/desktop/img2@1x.jpg 1x, image/desktop/img2@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg"  />
+								<source srcset="image/tablet/img2@1x.jpg 1x, image/tablet/img2@2x.jpg 2x" media="(min-width: 768px)" type="image/jpg" />
+								<source srcset="image/mobile/img2@1x.jpg 1x, image/mobile/img2@2x.jpg 2x" media="(min-width: 480px)" type="image/jpg" />
+						<img src="./image/mobile/img2@1x.jpg" alt="Ольга Репина" width="300" />
+						  
+							</picture>
+							
 							<div class="team-text">
 								<p class="team-name">Ольга Репина</p>
 								<p class="team">card bg</p>
@@ -228,7 +245,15 @@
 							</ul>
 						</li>
 						<li class="item">
-							<img src="./image/3.jpg" alt="Николай Тарасов" width="300" />
+
+							<picture>
+								<source srcset="image/desktop/img3@1x.jpg 1x, image/desktop/img3@2x.jpg 2x" media="(min-width: 1200px)"type="image/jpg" />
+								<source srcset="image/tablet/img3@1x.jpg 1x, image/tablet/img3@2x.jpg 2x" media="(min-width: 768px)"type="image/jpg" />
+								<source srcset="image/mobile/img3@1x.jpg 1x, image/mobile/img3@2x.jpg 2x" media="(min-width: 480px)"type="image/jpg" />
+								<img src="./image/mobile/img3@1x.jpg" alt="Николай Тарасов" width="300" />
+							
+							</picture>
+							
 							<div class="team-text">
 								<p class="team-name">Николай Тарасов</p>
 								<p class="team">Marketing</p>
@@ -265,7 +290,17 @@
 							</ul>
 						</li>
 						<li class="item">
-							<img src="./image/2.jpg" alt="Михаил Ермаков" width="300" />
+							<picture>
+								<source srcset="image/desktop/img4@1x.jpg 1x, image/desktop/img4@2x.jpg 2x" media="(min-width: 1200px)"
+									type="image/jpg" />
+								<source srcset="image/tablet/img4@1x.jpg 1x, image/tablet/img4@2x.jpg 2x" media="(min-width: 768px)"
+									type="image/jpg" />
+								<source srcset="image/mobile/img4@1x.jpg 1x, image/mobile/img4@2x.jpg 2x" media="(min-width: 480px)"
+									type="image/jpg" />
+								<img src="./image/mobile/img4@1x.jpg" alt="Михаил Ермаков" width="300" />
+							
+							</picture>
+							
 							<div class="team-text">
 								<p class="team-name">Михаил Ермаков</p>
 								<p class="team">UI Designer</p>
