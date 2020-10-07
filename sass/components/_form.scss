@@ -130,18 +130,22 @@
 
 /* submit-form */
 
-.subscription-container {
-	width: 570px;
-	height: 80px;
-}
-
 .form-subs {
-	display: flex;
-	align-items: flex-end;
-
 	& input:focus {
 		border-color: $text-white-color;
 		outline: none;
+	}
+}
+
+@include for-size(desktop) {
+	.form-subs {
+		display: flex;
+		align-items: flex-end;
+	}
+
+	.subscription-container {
+		width: 570px;
+		height: 80px;
 	}
 }
 
@@ -174,6 +178,12 @@
 		border: 1px solid $text-white-color;
 	}
 }
+@include for-size(tablet) {
+	.input-subs {
+		display: flex;
+	}
+}
+
 .label-subs {
 	padding: 0;
 }

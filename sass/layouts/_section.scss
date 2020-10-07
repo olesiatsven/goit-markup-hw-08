@@ -10,13 +10,12 @@
 	letter-spacing: 0.03em;
 }
 
-.preferences-list > .item-preferences {
-	margin-right: 30px;
-	width: calc((100% - 30px * 3) / 4);
+.preferences-list {
+	flex-wrap: wrap;
 }
 
-.preferences-list .item-preferences:last-child {
-	margin-right: 0;
+.item-preferences {
+	width: 100%;
 }
 
 .section-title {
@@ -31,12 +30,57 @@
 	text-transform: uppercase;
 	margin-top: 0;
 	margin-bottom: 10px;
-	text-align: left;
+	text-align: center;
 }
 
 .text {
-	max-width: 270px;
-	text-align: left;
+	max-width: 100%;
+	text-align: start;
+}
+
+@media screen and (max-width: 1199px) {
+	.item-preference:not(:last-child) {
+		margin-bottom: 30px;
+	}
+}
+
+@include for-size(tablet) {
+	.item-preferences:nth-child(2n + 1) {
+		margin-right: 30px;
+	}
+	.item-preferences {
+		flex-basis: calc((100% - 30px) / 2);
+	}
+	.section-title {
+		text-align: left;
+	}
+}
+
+@include for-size(desktop) {
+	.section-preferences {
+		padding-top: 94px;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: 0.03em;
+	}
+	.preferences-list > .item-preferences {
+		margin-right: 30px;
+		width: calc((100% - 30px * 3) / 4);
+	}
+
+	.preferences-list .item-preferences:last-child {
+		margin-right: 0;
+	}
+	.preferences-list {
+		flex-wrap: nowrap;
+	}
+	.text {
+		max-width: 270px;
+		text-align: left;
+	}
 }
 
 /* icons Preferences */
@@ -71,30 +115,40 @@
 }
 /* What are we doing */
 
-.section-work {
-	padding-top: 94px;
-	padding-bottom: 94px;
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 24px;
-	letter-spacing: 0.03em;
-}
-
-.work-list {
-	display: flex;
-	padding-left: 0;
-	padding-right: 0;
-
-	& .item {
-		width: calc((100% - 30px * 2) / 3);
-		margin-right: 30px;
-	}
-	& .item:last-child {
-		margin-right: 0;
+@media screen and (min-width: 320px) {
+	.section-work {
+		display: none;
 	}
 }
+
+@include for-size(desktop) {
+	.section-work {
+		padding-top: 94px;
+		padding-bottom: 94px;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: 0.03em;
+	}
+
+	.work-list {
+		display: flex;
+		padding-left: 0;
+		padding-right: 0;
+
+		& .item {
+			width: calc((100% - 30px * 2) / 3);
+			margin-right: 30px;
+		}
+		& .item:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+// team
 
 .title-main {
 	color: #212121;

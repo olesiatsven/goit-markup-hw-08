@@ -40,12 +40,17 @@
 /* footer icons   */
 
 .footer-icons {
-	margin-top: 12px;
+	margin-bottom: 60px;
+}
 
-	width: 207px;
-	height: 80px;
-	align-items: center;
-	margin-right: 93px;
+@include for-size(desktop) {
+	.footer-icons {
+		margin-top: 12px;
+		width: 207px;
+		height: 80px;
+		align-items: center;
+		margin-right: 93px;
+	}
 }
 
 .social-text {

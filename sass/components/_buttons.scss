@@ -40,6 +40,7 @@
 	padding-left: 28px;
 	padding-right: 28px;
 	margin-left: 12px;
+	margin-top: 20px;
 	height: 50px;
 	padding: 10px 29px;
 	border: none;
@@ -60,6 +61,18 @@
 	background-repeat: no-repeat;
 
 	transition-duration: 250ms $animation;
+}
+
+@include for-size(tablet) {
+	.btn-subs {
+		margin-left: 0;
+	}
+}
+
+@include for-size(desktop) {
+	.btn-subs {
+		margin-top: 0;
+	}
 }
 
 .icon-send {
