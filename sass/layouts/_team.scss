@@ -6,8 +6,8 @@
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 19px;
-	padding-top: 94px;
-	padding-bottom: 94px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 	text-align: center;
 }
 
@@ -17,9 +17,6 @@
 
 .list-team .item {
 	width: 100%;
-	// width: calc((100% - 30px * 3) / 4);
-
-	margin-right: 30px;
 	background: $text-white-color;
 	border-radius: 0px 0px 4px 4px;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -50,6 +47,14 @@
 	.list-team .item {
 		width: calc((100% - 30px * 3) / 2);
 	}
+	.list-team .item:nth-child(2n + 1) {
+		margin-right: 30px;
+		margin-bottom: 30px;
+	}
+
+	.list-team .item:nth-child(2n) {
+		margin-bottom: 30px;
+	}
 }
 
 @include for-size(desktop) {
@@ -61,8 +66,8 @@
 		font-weight: normal;
 		font-size: 16px;
 		line-height: 19px;
-		padding-top: 94px;
-		padding-bottom: 94px;
+		padding-top: 60px;
+		padding-bottom: 60px;
 		text-align: center;
 	}
 

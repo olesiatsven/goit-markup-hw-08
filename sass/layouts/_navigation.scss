@@ -10,6 +10,11 @@
 		height: 80px;
 	}
 }
+
+@include for-size(tablet) {
+	justify-content: space-between;
+	height: 80px;
+}
 .site-nav {
 	display: flex;
 
