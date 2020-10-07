@@ -7,7 +7,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-		url("/image/mobile/header@1x.jpg");
+		url("../image/mobile/header@1x.jpg");
 	background-size: cover;
 	background-position: center;
 	background-color: $background-color;
@@ -41,14 +41,14 @@
 	screen and (min-resolution: 192dpi),
 	screen and (min-resolution: 2dppx) {
 	.hero {
-		background-image: url("/image/mobile/header@2x.jpg");
+		background-image: url("../image/mobile/header@2x.jpg");
 	}
 }
 
 @include for-size(tablet) {
 	.hero {
 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-			url("/image/tablet/header@1x.jpg");
+			url("../image/tablet/header@1x.jpg");
 	}
 }
 
@@ -57,7 +57,7 @@
 	screen and (min-resolution: 2dppx) and (min-width: 768px) {
 	.hero {
 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-			url("/image/tablet/header@2x.jpg");
+			url("../image/tablet/header@2x.jpg");
 	}
 }
 
@@ -67,7 +67,7 @@
 		margin-left: auto;
 		margin-right: auto;
 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-			url("/image/desktop/Imghero@1x.jpg");
+			url("../image/desktop/Imghero@1x.jpg");
 		background-size: cover;
 		background-position: center;
 		background-color: $background-color;
@@ -102,6 +102,6 @@
 	screen and (min-resolution: 2dppx) and (min-width: 768px) {
 	.hero {
 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-			url("/image/desktop/Imghero@2x.jpg");
+			url("../image/desktop/Imghero@2x.jpg");
 	}
 }

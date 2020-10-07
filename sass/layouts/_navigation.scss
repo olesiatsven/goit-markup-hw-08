@@ -4,10 +4,16 @@
 	align-items: center;
 	position: relative;
 	justify-content: space-between;
-
-	@include for-size(tablet) {
+}
+@include for-size(tablet) {
+	.main-nav {
 		justify-content: space-between;
 		height: 80px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.menu-container {
+		z-index: 1000;
 	}
 }
 
@@ -100,6 +106,12 @@
 	}
 }
 
+// @media screen and (max-width: 1199px) {
+// 	.main-nav {
+// 		max-width: 768px;
+// 	}
+// }
+
 // Menu
 
 .menu-container {
@@ -187,6 +199,7 @@
 
 	@include for-size(desktop) {
 		display: flex;
+		font-size: 14px;
 	}
 }
 
