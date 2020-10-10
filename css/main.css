@@ -323,7 +323,7 @@ img {
 
 /* Clients icons */
 .section-clients {
-  padding-top: 0;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
@@ -362,7 +362,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
   height: 90px;
   fill: #afb1b8;
   border: 1px solid #afb1b8;
@@ -389,6 +388,10 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.clients-item {
+  width: calc((100% - 30px) / 2);
+}
+
 @media (min-width: 768px) {
   .clients-item:nth-child(2) {
     margin-right: 30px;
@@ -398,6 +401,12 @@ img {
   }
   .clients-item:nth-child(3) {
     margin-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .clients-item {
+    width: calc((100% - 30px * 2) / 3);
   }
 }
 
@@ -1947,6 +1956,9 @@ a:hover svg {
 .list-team {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .list-team .item {
@@ -1956,6 +1968,7 @@ a:hover svg {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
 }
 
 .list-team .item:last-child {

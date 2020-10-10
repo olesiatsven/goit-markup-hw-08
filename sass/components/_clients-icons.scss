@@ -1,7 +1,7 @@
 /* Clients icons */
 
 .section-clients {
-	padding-top: 0;
+	padding-top: 60px;
 	padding-bottom: 60px;
 
 	& h2 {
@@ -29,7 +29,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 170px;
+	// width: 170px;
+
 	height: 90px;
 	fill: $social-icons-color;
 	border: 1px solid $social-icons-color;
@@ -54,6 +55,9 @@
 	transition: fill 250ms $animation;
 }
 
+.clients-item {
+	width: calc((100% - 30px) / 2);
+}
 @include for-size(tablet) {
 	.clients-item:nth-child(2) {
 		margin-right: 30px;
@@ -64,6 +68,12 @@
 
 	.clients-item:nth-child(3) {
 		margin-right: 0;
+	}
+}
+
+@include for-size(tablet) {
+	.clients-item {
+		width: calc((100% - 30px * 2) / 3);
 	}
 }
 
