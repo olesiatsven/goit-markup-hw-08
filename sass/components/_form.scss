@@ -137,18 +137,6 @@
 	}
 }
 
-@include for-size(desktop) {
-	.form-subs {
-		display: flex;
-		align-items: flex-end;
-	}
-
-	.subscription-container {
-		width: 570px;
-		height: 80px;
-	}
-}
-
 .text-subs {
 	margin-top: 0;
 	margin-bottom: 20px;
@@ -162,7 +150,7 @@
 }
 
 .input-subs {
-	width: 358px;
+	width: 100%;
 	height: 50px;
 	outline: none;
 	padding-left: 16px;
@@ -181,9 +169,26 @@
 @include for-size(tablet) {
 	.input-subs {
 		display: flex;
+		width: 450px;
+	}
+	.form-subs {
+		margin-top: 63px;
 	}
 }
 
 .label-subs {
 	padding: 0;
+}
+
+@include for-size(desktop) {
+	.form-subs {
+		display: flex;
+		align-items: flex-end;
+		margin-top: 0;
+	}
+
+	.subscription-container {
+		width: 570px;
+		height: 80px;
+	}
 }

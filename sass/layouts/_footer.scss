@@ -52,6 +52,13 @@
 		flex-wrap: wrap;
 		text-align: center;
 	}
+	.footer-info {
+		margin-right: 165px;
+		margin-bottom: 0;
+	}
+	.footer-icons {
+		margin-bottom: 0;
+	}
 	// .footer {
 	// 	min-width: 768px;
 	// }
@@ -77,5 +84,9 @@
 	}
 	.footer-info {
 		margin-right: 70px;
+		margin-bottom: 0;
+	}
+	.input-subs {
+		width: 358px;
 	}
 }

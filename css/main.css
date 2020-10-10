@@ -203,7 +203,7 @@ img {
 
 @media (min-width: 480px) {
   .container {
-    min-width: 480px;
+    width: 480px;
   }
 }
 
@@ -267,6 +267,7 @@ img {
 }
 
 .btn-subs {
+  width: 200px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -641,21 +642,6 @@ a:hover svg {
   outline: none;
 }
 
-@media (min-width: 1200px) {
-  .form-subs {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  .subscription-container {
-    width: 570px;
-    height: 80px;
-  }
-}
-
 .text-subs {
   margin-top: 0;
   margin-bottom: 20px;
@@ -669,7 +655,7 @@ a:hover svg {
 }
 
 .input-subs {
-  width: 358px;
+  width: 100%;
   height: 50px;
   outline: none;
   padding-left: 16px;
@@ -691,11 +677,31 @@ a:hover svg {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 450px;
+  }
+  .form-subs {
+    margin-top: 63px;
   }
 }
 
 .label-subs {
   padding: 0;
+}
+
+@media (min-width: 1200px) {
+  .form-subs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-top: 0;
+  }
+  .subscription-container {
+    width: 570px;
+    height: 80px;
+  }
 }
 
 .logo-header {
@@ -983,6 +989,13 @@ a:hover svg {
         flex-wrap: wrap;
     text-align: center;
   }
+  .footer-info {
+    margin-right: 165px;
+    margin-bottom: 0;
+  }
+  .footer-icons {
+    margin-bottom: 0;
+  }
   .nav-item {
     margin-top: 8px;
   }
@@ -1007,6 +1020,10 @@ a:hover svg {
   }
   .footer-info {
     margin-right: 70px;
+    margin-bottom: 0;
+  }
+  .input-subs {
+    width: 358px;
   }
 }
 
